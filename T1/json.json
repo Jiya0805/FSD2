@@ -1,0 +1,8 @@
+{
+    "name":"test",
+    "age":20,
+    "rpass":true,
+    "subject" : {"FSD1":"NAS","FCSP2":"TAT"},
+    "maths":[25,23,22],
+    "text":null
+}
