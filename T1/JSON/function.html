@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-In Function</title>
+    <script>
+        var t ={
+            "name":"text",
+            "age":20,
+            "subject":["FSD2","FCSP2"]
+        }
+
+        var jString = JSON.stringify(t)
+        console.log(jString) // {"name":"text","age":20,"subject":["FSD2","FCSP2"]}
+        console.log(jString.subject) // undefined
+
+        var jObj = JSON.parse(jString)
+        console.log(jObj) // {name: 'text', age: 20, subject: Array(2)} --> subject: (2) ['FSD2', 'FCSP2']
+        console.log(jObj.name) // text
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

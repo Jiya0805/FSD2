@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 7</title>
+    <script>
+        const person =
+            [
+                {
+                    name: "NAS",
+                    height: 5.2
+                },
+                {
+                    name: "ABC",
+                    height: 5.5
+                },
+                {
+                    name: "XYZ",
+                    height: 6.0
+                }
+            ]
+        i=0
+        h=[]
+        while(i<person.length){
+            h[i]=person[i]['height']
+            i++
+        }
+        console.log("Max Height : ",h.sort()[h.length-1])
+        
+        /*var a = person.sort((a,b)=>b.height-a.height)[0]['height']
+        document.write(a)*/
+    </script>
+</head>
+<body>
+
+</body>
+</html>

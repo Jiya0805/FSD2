@@ -1,0 +1,5 @@
+1. node -v --> version check
+   npm -v --> node package manager version check
+2. npn init --. initialise
+   enter and at the end "yes"
+3. node --> to get >

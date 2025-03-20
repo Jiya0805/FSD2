@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 3</title>
+    <script>
+        var a = {
+            "FSD": [
+                {
+                    "Topic": "HTML",
+                    "course": "Beginer",
+                    "content": ["tags", "table", "form"],
+                },
+                {
+                    "Topic": "CSS",
+                    "course": "Beginer",
+                    "content": ["tags", "table", "form"]
+                }
+            ]
+        }
+
+        // FOR IN LOOP
+        for (i in a['FSD']) {  // in --> index
+            for (j in a.FSD[i]) {
+                document.write(a.FSD[i][j] + "<br><br>")
+            }
+            document.write("<br>")
+        }
+
+        /*HTML
+
+        Beginer
+
+        tags,table,form
+
+
+        CSS
+
+        Beginer
+
+        tags,table,form*/
+
+        // FOR OF LOOP
+        for(i of a.FSD){
+            document.write(i.Topic+"<br>"+i.course+"<br>"+i.content+"<br><br>")
+        }
+        /*HTML
+        Beginer
+        tags,table,form
+
+        CSS
+        Beginer
+        tags,table,form*/
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
