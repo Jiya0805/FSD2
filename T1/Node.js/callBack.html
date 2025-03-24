@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back</title>
+    <script>
+        /*var test = function(){
+            console.log("Hi")
+        }
+        setTimeout(test,3000)
+        setTimeout(function(){console.log("Hello")},5000)
+        setTimeout(()=>{console.log("Test")},2000)
+        function test1(){
+            console.log("Testing")
+        }
+        setTimeout(test1,6000)*/
+
+        function change(){
+            document.getElementById("hi").innerHTML="Welcome"
+        }
+        setTimeout(change,5000)
+    </script>
+</head>
+<body>
+    <h1 id="hi">Hi</h1>
+</body>
+</html>

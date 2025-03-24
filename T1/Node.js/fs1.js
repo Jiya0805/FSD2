@@ -19,6 +19,6 @@ console.log(data) // decoded : Hello World!
 
 fs.renameSync("node/rw.txt","node/test.txt")
 
-// fs.unlink("node/rw.txt") TypeError [ERR_INVALID_ARG_TYPE]: The "cb" argument must be of type function. Received undefined --> it is used to DELETE a file
+// fs.unlinkSync("node/rw.txt") TypeError [ERR_INVALID_ARG_TYPE]: The "cb" argument must be of type function. Received undefined --> it is used to DELETE a file
 
 fs.appendFileSync("node/rw.txt","Test")

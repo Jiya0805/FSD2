@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var font=50
+        function fun(font){
+            console.log(font)
+            document.getElementById("t").style.fontSize=font+"px"
+        }
+        function inc(){
+            test = setInterval(()=>{
+                if(font<=100){
+                    fun(font++)
+                }
+            },1000)
+        }
+        function dec(){
+            test = setInterval(()=>{
+                if(font>=15){
+                    fun(font--)
+                }
+            },1000)
+        }
+        function stop(){
+            clearInterval(test)
+        }
+    </script>
+</head>
+<body>
+    <h1 id="t">Hi</h1>
+    <button type="button" onclick="inc()">Increase</button>
+    <button type="button" onclick="dec()">Decrease</button>
+    <button type="button" onclick="stop()">Stop</button>
+</body>
+</html>

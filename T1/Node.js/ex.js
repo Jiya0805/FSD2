@@ -12,4 +12,4 @@ console.log(a.sort((a,b)=>a-b))
 fs.writeFileSync("node/ex1.txt",data)
 fs.appendFileSync("node/ex1.txt","\nHello Student")
 
-fs.unlink("node/ex1.txt") 
+fs.unlinkSync("node/ex1.txt") 
