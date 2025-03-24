@@ -1,0 +1,1 @@
+[{"name":"circle","diameter":8,"perimeter":25.12},{"name":"square","side":10,"perimeter":40}]
